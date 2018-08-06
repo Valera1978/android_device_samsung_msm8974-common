@@ -34,7 +34,8 @@ LOCAL_LDFLAGS += -Wl,--export-dynamic
 
 ## Includes
 LOCAL_C_INCLUDES:= \
-    $(LOCAL_PATH)/platform_lib_abstractions
+    $(LOCAL_PATH)/platform_lib_abstractions \
+    $(TOP)/hardware/libhardware/include
 
 LOCAL_COPY_HEADERS_TO:= gps.utils/
 LOCAL_COPY_HEADERS:= \
@@ -57,7 +58,7 @@ LOCAL_COPY_HEADERS:= \
 
 LOCAL_MODULE := libgps.utils
 LOCAL_MODULE_OWNER := qcom
-LOCAL_PROPRIETARY_MODULE := true
+LOCAL_VENDOR_MODULE := true
 
 LOCAL_MODULE_TAGS := optional
 

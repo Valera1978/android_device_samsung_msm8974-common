@@ -27,7 +27,7 @@ TARGET_CPU_VARIANT := krait
 BOARD_USES_ALSA_AUDIO := true
 
 # Binder API version
-TARGET_USES_64_BIT_BINDER := true
+#TARGET_USES_64_BIT_BINDER := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
